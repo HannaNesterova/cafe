@@ -250,30 +250,33 @@ h6 {
             content: "";
             width: 574px;
             height: 30px;
-            background-color: #36383c;
+            background-color: #FFFFFF;
+            opacity: 10%;
             top: -60px;
             left: 0px;
-            border: 1px solid black;
+            border: 2px solid black;
         }
         span{
             position: absolute;
             content: "";
             width: 30px;
             height: 770px;
-            background-color: #36383c;
+            background-color: #FFFFFF;
+            opacity: 10%;
             top: -30px;
             left: -30px;
-            border: 1px solid black;
-            text-shadow:2px 2px #292E36;
+            border: 2px solid black;
         }
         .main_section-img::after {
             position: absolute;
             content: "";
             width: 30px;
             height: 770px;
-            background-color: #36383c;
+            background-color: #FFFFFF;
+            opacity: 10%;
             top: -30px;
             right: -3px;
+            border: 2px solid black;
         }
     }
 
