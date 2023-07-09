@@ -42,12 +42,16 @@ body {
     -webkit-text-size-adjust: 100%;
     font-family: 'Inter', sans-serif;
     color: #656D72;
-    max-width: 1440px;
     min-width: 320px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
+
 .container {
-    max-width: 1360px;
+    /* Remove or modify the max-width property */
+    max-width: 1300px; 
     margin: 0 auto;
     padding: 0px 30px;
     width: 100%;
@@ -86,6 +90,7 @@ a:hover {
 
 ul li {
     list-style: none;
+    text-decoration: none;
 }
 
 
@@ -98,12 +103,16 @@ h6 {
     font-size: inherit;
     font-weight: inherit;
 }
+
 .header{
     background-color: #292E36;
     .header_pretitle{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #5C6168;
+        padding: 10px 0px;
     }
     .header_number{
         color: white;
@@ -116,6 +125,14 @@ h6 {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .header_number:hover{
+        color: #E1B168;
+        border: 1px solid #E1B168;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all 0.2s ease;
     }
     img{
       width: 283px;
@@ -131,5 +148,45 @@ h6 {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: 'Josefin Sans', sans-serif;
     }
+    .reservation:hover{
+        color: white;
+        background-color: #5C6168;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    .header_menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px;
+    }
+    .menu_list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    a{
+        color: white;
+        margin-right: 20px;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #E1B168;
+        transition: all 0.2s ease;
+    }
+    .header_menu-colomn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    li{
+        list-style: none;
+        margin-right: 7px;
+    }
+ 
 }
