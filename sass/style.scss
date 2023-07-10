@@ -280,4 +280,47 @@ h6 {
         }
     }
 
+.section_story{
+    background-color: #FFF8F5;
+    .section_story-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+        .story_menu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 40px 0px 20px;
+        }
+    
+        ._icon-location {}
+    
+        .icon {
+            font-size: 30px;
+            background-color: #292E36;
+            padding: 10px;
+            color: #FFFFFF;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .story_pretitle {
+            color: black;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 20px;
+        }
+    
+        .story_title {
+            color: #555555;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    
+        ._icon-time {}
+    
+        ._icon-date {}
+}
 
