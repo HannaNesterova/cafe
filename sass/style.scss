@@ -385,7 +385,7 @@ h6 {
 
             &::before,
             &::after {
-                width: 0px;
+                width: 10px;
             }
         }
     }
@@ -450,6 +450,28 @@ h6 {
         border-radius: 15px;
     }
 }
-.menu_text {}
+.menu_text {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+}
+.menu_ingredients{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.name{
+    font-size: 20px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.ingredients{
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.price{
+    font-size: 25px;
+    font-family: 'Cormorant Garamond', serif;
+}
 
 }
