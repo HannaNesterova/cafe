@@ -293,10 +293,7 @@ h6 {
             align-items: center;
             gap: 20px;
             margin: 40px 0px 20px;
-        }
-    
-        ._icon-location {}
-    
+        }    
         .icon {
             font-size: 30px;
             background-color: #292E36;
@@ -472,6 +469,136 @@ h6 {
 .price{
     font-size: 25px;
     font-family: 'Cormorant Garamond', serif;
+  }
 }
 
+.testimonial {
+    background-color: #292E36;
+    padding: 100px 0px 200px;
+    .menu {
+            font-size: 15px;
+            font-family: 'Josefin Sans', sans-serif;
+            text-transform: uppercase;
+            position: relative;
+            transition: all 0.2s ease;
+            color: white;
+    
+            &:hover {
+                color: #E1B168;
+                cursor: pointer;
+            }
+    
+            &:active {
+    
+                &::before,
+                &::after {
+                    width: 10px;
+                }
+            }
+        }
+    
+        .menu::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: -6px;
+            width: 60px;
+            height: 2px;
+            background-color: #E1B168;
+            transition: all 0.3s ease;
+        }
+    
+        .menu::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: -6px;
+            width: 60px;
+            height: 2px;
+            background-color: #E1B168;
+            transition: all 0.3s ease;
+        }
+    .try_menu {
+        font-size: 40px;
+        font-family: 'Cormorant Garamond', serif;
+        color: white;
+        margin: 10px 0px;
+    }
+    
+    .try_menu-text {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: white;
+    }
+    .section_feedbacks {
 }
+.carousel_feedback {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.carousel_box {
+    background-color: #343942;
+    color: white;
+    padding: 0px 45px;
+    width: 540px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.box-upPart {
+    display: flex;
+    justify-content: flex-start;
+}
+.carousel-img-text {
+    margin-left: 20px;
+}
+.carousel-img-pretitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+}
+.carousel-img-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;color: #E1B168;
+}
+.box-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    position: relative;
+}
+.box-text::before{
+    position: absolute;
+    content: "";
+    width: 450px;
+    height: 1px;
+    background-color: #656D72;
+    top: -10px;
+    left: 7px;
+}
+.box-img{
+    position: relative;
+}
+.box-img::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("/images/feedback/quotes.png");
+    background-size: cover;
+    margin-right: 5px;
+    background-color: #E1B168;
+    top: 0;
+    left: 0;
+}
+.testimonial_img img{
+    max-width: 1600px;
+    width: 100%;
+    height: 600px;
+}
+}
+
