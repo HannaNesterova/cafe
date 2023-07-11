@@ -474,7 +474,7 @@ h6 {
 
 .testimonial {
     background-color: #292E36;
-    padding: 100px 0px 200px;
+    padding: 100px 0px 0px;
     .menu {
             font-size: 15px;
             font-family: 'Josefin Sans', sans-serif;
@@ -596,9 +596,9 @@ h6 {
     left: 0;
 }
 .testimonial_img img{
-    max-width: 1600px;
-    width: 100%;
-    height: 600px;
+margin: auto 0;
+ max-width: 1440px;
+ width: 100%;
 }
 }
 
@@ -684,6 +684,10 @@ h6 {
             display: flex;
             justify-content: center;
             gap: 30px;
+            flex-wrap: wrap;
+        }
+        .burger{
+            width: 500px;
         }
 }
 
@@ -920,3 +924,172 @@ h6 {
 }
 }
 
+.section_blog{
+    background-color: white;
+        padding: 100px 0px 100px;
+    
+        .menu {
+            font-size: 15px;
+            font-family: 'Josefin Sans', sans-serif;
+            text-transform: uppercase;
+            position: relative;
+            transition: all 0.2s ease;
+            color: #292E36;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            &:hover {
+                color: #E1B168;
+                cursor: pointer;
+            }
+    
+            &:active {
+    
+                &::before,
+                &::after {
+                    width: 10px;
+                    position: absolute;
+                    content: "";
+                    background-color: #E1B168;
+                    transition: all 0.3s ease;
+                }
+    
+                &::before {
+                    top: -20%;
+                }
+    
+                &::after {
+                    bottom: -20%;
+                }
+            }
+        }
+    
+        .menu::before,
+        .menu::after {
+            position: absolute;
+            content: "";
+            left: 50%;
+            background-color: #E1B168;
+            transform: translateX(-50%);
+            height: 2px;
+            width: 100px;
+        }
+    
+        .menu::before {
+            top: -20%;
+        }
+    
+        .menu::after {
+            bottom: -20%;
+        }
+    
+        .offers {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px;
+        }
+    
+        .offers-pretitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 40px;
+            color: black;
+        }
+    
+        .offers-title {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 20px;
+        }
+    
+        .offers-promotions {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+    
+        .news {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 550px;
+            border: 1px solid #5C6168;
+        }
+        .img_btn{
+            position: relative;
+        }
+        .button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            z-index: 1;
+        }
+
+        .button button {
+            background: #E1B168;
+            padding: 13px 23px;
+            border: none;
+            color: #000000;
+            font-size: 16px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .blog_img{
+            filter: brightness(0.3);
+            max-width: 550px;
+        }
+        .blog_block{
+            padding: 15px;
+        }
+        .blog_date{
+            display: flex;
+        }
+        .blog_date p{
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 15px;
+            margin-right: 40px;
+            position: relative;
+            margin-top: 40px;
+
+            &::after{
+                position: absolute;
+                content: "";
+                width: 100px;
+                height: 1px;
+                background-color: #E1B168;
+                top: 0;
+                left: 0;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                width: 100px;
+                height: 1px;
+                background-color: #E1B168;
+                bottom: 0;
+                left: 0;
+            }
+            }
+        .block_text{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .block_text_pretitle{
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 30px;
+            margin-bottom: 15px;
+            color: black;
+        }
+        .block_text_title{
+            font-size: 20px;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        }
+
+    
