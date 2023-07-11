@@ -1037,6 +1037,11 @@ margin: auto 0;
             color: #000000;
             font-size: 16px;
             font-family: 'Cormorant Garamond', serif;
+            transition: all 0.3s ease;
+            &:hover{
+                background: #555555;
+                color: white;
+            }
         }
         .blog_img{
             filter: brightness(0.3);
