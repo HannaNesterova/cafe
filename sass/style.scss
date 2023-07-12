@@ -536,15 +536,14 @@ h6 {
 .carousel_feedback {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 20px;
 }
 .carousel_box {
     background-color: #343942;
     color: white;
     padding: 0px 45px;
-    width: 540px;
-    height: 300px;
+    max-width: 540px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -1039,7 +1038,7 @@ margin: auto 0;
             font-family: 'Cormorant Garamond', serif;
             transition: all 0.3s ease;
             &:hover{
-                background: #555555;
+                background: #e1b1689b;
                 color: white;
             }
         }
@@ -1097,4 +1096,154 @@ margin: auto 0;
         }
         }
 
+.section_form{
+    .page_form {
+            position: relative;
+            height: 997px;
+            /* Set the height and other styles for the page */
+        }
     
+        .background-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Set the background image and other background styles */
+            background: url("/images/main_img/cafe12.png");
+            background-size: cover;
+            background-position: center;
+        }
+                .menu {
+            font-size: 15px;
+            font-family: 'Josefin Sans', sans-serif;
+            text-transform: uppercase;
+            position: relative;
+            transition: all 0.2s ease;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            margin-top: 100px;
+    
+            &:hover {
+                color: #E1B168;
+                cursor: pointer;
+            }
+    
+            &:active {
+    
+                &::before,
+                &::after {
+                    width: 10px;
+                    position: absolute;
+                    content: "";
+                    background-color: #E1B168;
+                    transition: all 0.3s ease;
+                }
+    
+                &::before {
+                    top: -20%;
+                }
+    
+                &::after {
+                    bottom: -20%;
+                }
+            }
+        }
+    
+        .menu::before,
+        .menu::after {
+            position: absolute;
+            content: "";
+            left: 50%;
+            background-color: #E1B168;
+            transform: translateX(-50%);
+            height: 2px;
+            width: 100px;
+        }
+    
+        .menu::before {
+            top: -20%;
+        }
+    
+        .menu::after {
+            bottom: -20%;
+        }
+    
+        .offers {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0px;
+            z-index: 1;
+        }
+    
+        .offers-pretitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 40px;
+            color: rgb(255, 255, 255);
+            z-index: 1;
+            text-transform: uppercase;
+        }
+
+    
+
+        .section_reservation{
+        background-color: rgba(41, 46, 54, 0.8);
+        z-index: 1;
+        padding: 20px;
+        position: relative;
+        width: 700px;
+        height: 600px;
+        margin: auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+    
+            input {
+                background-color: #292E36;
+                opacity: 1;
+                color: white;
+                border: 1px solid #555555;
+            }
+    
+            input::placeholder {
+                color: white;
+                opacity: 1;
+                
+            }
+        }
+        .input_name{
+            margin: 40px  10px 10px;
+            padding: 20px 30px;
+            width: 200px;
+            height: 40px;
+        }
+        .input_order{
+            margin: 10px 10px;
+            padding: 20px 30px;
+            width: 130px;
+            height: 40px;
+        }
+        .form_btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000000;
+            background-color: white;
+            padding: 20px 40px;
+            transition: all 0.3s ease;
+            &:hover{
+                background-color: rgba(41, 46, 54, 0.8);
+                color: #E1B168;
+                border-radius: 15px;
+            }
+        }
+    }
