@@ -45,7 +45,7 @@ body {
     min-width: 320px;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    //overflow-x: hidden;
 }
 
 
@@ -531,12 +531,35 @@ h6 {
         margin-bottom: 20px;
         color: white;
     }
-    .section_feedbacks {
+    .section_feedbacks{
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .section_feedbacks i{
+        top: 50%;
+        background-color: #fff8f5a7;
+        height: 45px;
+        width: 45px;
+        text-align: center;
+        line-height: 45px;
+        cursor: pointer;
+        border-radius: 50%;
+        position: absolute;
+        transform: translateY(-50%);
+}
+.section_feedbacks i:first-child{
+    left: -25px;
+}
+.section_feedbacks i:last-child {
+    right: -25px;
 }
 .carousel_feedback {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    cursor: pointer;
+    overflow-x: hidden;
 }
 .carousel_box {
     background-color: #343942;
@@ -569,30 +592,16 @@ h6 {
     font-size: 24px;
     position: relative;
 }
-.box-text::before{
-    position: absolute;
-    content: "";
-    width: 450px;
-    height: 1px;
-    background-color: #656D72;
-    top: -10px;
-    left: 7px;
-}
+    hr{
+        width: 300px;
+        height: 2px;
+        background-color: #656D72;
+    }
 .box-img{
-    position: relative;
-}
-.box-img::before {
-    position: absolute;
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url("/images/feedback/quotes.png");
-    background-size: cover;
-    margin-right: 5px;
-    background-color: #E1B168;
-    top: 0;
-    left: 0;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    padding: 0px 0px 10px 0px;
 }
 .testimonial_img img{
 margin: auto 0;
