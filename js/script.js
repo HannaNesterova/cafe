@@ -37,3 +37,16 @@ const dragStop = () => {
 carousel.addEventListener('mouseover', dragging)
 carousel.addEventListener('mousedown', dragStart);
 carousel.addEventListener('mouseup', dragStop);
+
+// BURGER
+const body = document.querySelector('body');
+const burger = document.querySelector('.header_burger');
+const menu = document.querySelector('.header_menu');
+
+burger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    burger.classList.toggle('active');
+    body.classList.toggle('locked');
+})
+
+console.log(burger)
