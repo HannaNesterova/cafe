@@ -161,7 +161,7 @@ h6 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 0px;
+        padding: 10px 20px;
     }
     .menu_list{
         display: flex;
@@ -1629,6 +1629,10 @@ footer{
         width: 169px;
         height: 94px;
     }
+    .header a:hover{
+        color: #292E36;
+        transition: all 1.5s ease;
+    }
     .header .header_number {
         width: 115px;
         height: 40px;
@@ -1642,7 +1646,7 @@ footer{
         left: 0;
         height: 100%;
         background-color: #ffffff;
-        margin-top: -1000px;
+        margin-top: -1500px;
         overflow: auto;
     }
     .header_menu.active{
@@ -1717,5 +1721,152 @@ footer{
     .header_burger.active span{
         display: none;
     }
+    .section_form .section_reservation{
+        width: 505px;
+        height: 560px;
+        padding: 4px;
+    }
+    .working_hours{
+        margin-top: 30px;
+    }
+    .section_story .section_story-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .section_footer .subscribe input{
+        height: 55px;
+    }
+    .section_footer button{
+        height: 55px;
+    }
+    .section_service .service_main{
+        flex-direction: column;
+    }
+    .section_service .service_option{
+        width: 150px;
+        height: 150px;
+        margin-top: 10px;
+    }
+    .section_story .delicious_story img{
+            width: 200px;
+    }
+    .section_nemu .menu_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo_footer img{
+        width: 250px;
+    }
+    .main_section .main_section-img::after,
+    .main_section .main_section-img::before,
+    .main_section span {
+        display: none;
+    }
 
+    .main_section img {
+        width: 350px;
+        height: 350px;
+    }
+}
+@media all and (max-width:600px){
+    .main_section-container{
+        flex-direction: column;
+    }
+
+    .section_story .delicious_story{
+        flex-direction: column;
+    }
+    .section_story .delicious_story img{
+        width: 270px;
+    }
+    .section_nemu .menu_container{
+        flex-direction: column;
+    }
+    .section_form .section_reservation{
+        width: 500px;
+    }
+    .section_form .offers-pretitle {
+        font-size: 25px;
+    }
+    .section_footer .footer_logo_section{
+        flex-direction: column;
+    }
+    footer .column{
+        flex-wrap: wrap;
+    }
+    .section_nemu .menu_text{
+        width: 450px;
+    }
+}
+@media all and (max-width:450px){
+    .header_pretitle{
+        text-align: center;
+    }
+    .header img {
+        width: 200px;
+        height: 100px;
+    }
+    .section_nemu .menu_text {
+        width: 400px;
+    }
+    .section_form .section_reservation {
+        width: 377px;
+    }
+    .section_footer .footer_contacts p {
+        font-size: 14px;
+    }
+    .section_footer .logo_footer p {
+        font-size: 17px;
+    }
+    .section_blog .offers-pretitle,
+    .section_story .delicious_story_pretitle,
+    .popular_dishes .offers-pretitle,
+    .section_service .try_menu {
+        font-size: 30px;
+        text-align: center;
+    }
+    .section_blog .offers-title,
+    .section_story .delicious_story_title,
+    .popular_dishes .offers-title,
+    .section_service .try_menu-text {
+        font-size: 16px;
+        text-align: center;
+    }
+    .popular_dishes .dishes_name,
+    .section_blog .block_text_pretitle{
+        font-size: 23px;
+    }
+    .popular_dishes .dishes_text,
+    .section_blog .block_text_title{
+        font-size: 16px;
+    }
+    .header .header_pretitle {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .section_story .delicious_story img {
+        width: 199px;
+    }
+    .section_footer .subscribe input {
+    width: 203px;
+    }
+    .section_form .section_reservation {
+        width: 333px;
+    }
+    .header .header_number,
+    .header .reservation {
+        display: none;
+    }
+    .section_nemu .menu_ingredients {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .section_nemu .try_menu {
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    .section_nemu .menu_img {
+        width: 340px;
+    }
 }
