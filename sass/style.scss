@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 /*Null settings*/
+html {
+    scroll-behavior: smooth;
+}
 * {
     padding: 0;
     margin: 0;
@@ -195,6 +198,7 @@ h6 {
     border: 3px dashed #5C6168;
     padding: 60px 0px 0px 0px;
     background-color: #292E36;
+
     .main_section-container{
         display: flex;
         justify-content: space-between;
@@ -202,6 +206,7 @@ h6 {
     }
     .main_section-column{
         width: 470px;
+        min-height: 100vh;
     }
     .main_section-title {
         font-size: 100px;
@@ -1868,5 +1873,12 @@ footer{
     }
     .section_nemu .menu_img {
         width: 340px;
+    }
+    .section_nemu .menu_text{
+        width: 350px;
+        align-items: center;
+    }
+    .popular_dishes .offers-promotions{
+        justify-content: center;
     }
 }
