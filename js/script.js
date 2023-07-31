@@ -49,4 +49,27 @@ burger.addEventListener('click', () => {
     body.classList.toggle('locked');
 })
 
+// Get all the anchor links inside the header_menu
+const headerLinks = document.querySelectorAll('.header_menu a');
 
+function closeHeaderMenu() {
+    menu.classList.remove('active');
+    burger.classList.remove('active');
+    body.classList.remove('locked');
+}
+
+function handleHeaderLinkClick(e) {
+    e.preventDefault();
+
+    const targetId = e.target.getAttribute('href');
+
+    document.querySelector(targetId).scrollIntoView({
+        behavior: 'smooth',
+    });
+
+    closeHeaderMenu();
+}
+
+headerLinks.forEach((link) => {
+    link.addEventListener('click', handleHeaderLinkClick);
+})
