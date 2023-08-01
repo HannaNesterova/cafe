@@ -1823,6 +1823,18 @@ footer{
     .section_footer .logo_footer p {
         font-size: 17px;
     }
+    .section_story .delicious_story_text{
+        align-items: center;
+    }
+    .testimonial .try_menu-text{
+        width: 300px;
+    }
+    .menu_img{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .section_blog .offers-pretitle,
     .section_story .delicious_story_pretitle,
     .popular_dishes .offers-pretitle,
@@ -1880,5 +1892,8 @@ footer{
     }
     .popular_dishes .offers-promotions{
         justify-content: center;
+    }
+    .main_section .main_section-container{
+        text-align: center;
     }
 }
